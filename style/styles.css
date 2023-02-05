@@ -1,0 +1,141 @@
+body {
+    background: black url("https://s3.amazonaws.com/csstarwars/background.png");
+    color: #fff;
+  }
+ .wrapper{
+    width: 100%;
+    overflow: hidden;
+     
+ }
+ .container{
+    width: 1900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+ }
+ 
+ /* HEADER */
+ 
+ .header__container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 0 0 15px;
+ }
+ .header__img{
+    width: 100px;
+    height: 100%;
+    margin-right: 30px;
+ }
+ .number-film{
+    width: 100px;
+    height: 20px;
+ }
+ 
+ 
+ 
+ .disactive{
+    display: none;
+ }
+ /* LOADER */
+ 
+ #stage {
+    height: 600px;
+    width: 1000px;
+    overflow: hidden;
+    margin: 0 auto;
+    -webkit-perspective-origin: center 300px;
+    -webkit-perspective: 800;
+  }
+  
+  #far-far-away {
+    color: rgb(75,213,238);
+    font-family: "FranklinGothicBookRegular", sans-serif;
+    font-size: 48px;
+    line-height: 1.5;
+    position: absolute;
+    top: 200px;
+    left: 190px;
+    opacity: 0;
+    -webkit-animation: fade-in-out 2s linear;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-delay: 2s;
+  }
+  #stage-img{
+    opacity: 0;
+    position: absolute;
+    top: 100px;
+    width: 1000px;
+    -webkit-transform-origin: center center;
+    -webkit-animation: logo 15s linear;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-delay: 4s;
+    -webkit-animation-timing-function: ease-in;
+  }
+ 
+  @-webkit-keyframes fade-in-out {
+    0%   { opacity:0; }
+    16%  { opacity:1; }
+    84%  { opacity:1; }
+    100% { opacity:0; }
+  }
+  @-webkit-keyframes logo {
+    0%   { -webkit-transform: translateZ(0);         opacity:0;  }
+    0.1% { -webkit-transform: translateZ(0);         opacity:1;  }
+    50%  { -webkit-transform: translateZ(-50000px);  opacity:1;  }
+    60%  { -webkit-transform: translateZ(-60000px);  opacity:0;  }
+    100% { -webkit-transform: translateZ(-100000px); opacity:0;  }
+  }
+ 
+ 
+ 
+ 
+ 
+ .peoples__header{
+ text-align: center;
+ font-size: 30px;
+ padding: 20px 0;
+ }
+  .peoples{
+  
+    display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+  }
+  .person{
+    text-align: center;
+    min-width: 300px;
+    height: 520px;
+    border: #fff 1px solid;
+   display: flex;
+   flex-direction: column;
+  align-items: center;
+   margin: 0 20px 15px 0;
+  
+  }
+  .person__img{
+    width: 250px;
+    height: 100%;
+  }
+  .person p{
+    margin-bottom: 2px;
+  }
+  .planets__header{
+    font-size: 30px;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .planets{
+    color: #fff;
+    font-size: 20px;
+    
+  }
+  .planet{
+    margin-bottom: 5px;
+   
+  }
+  .pagination{
+  
+ text-align: center;
+  }

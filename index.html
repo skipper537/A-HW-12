@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/styles.css">
+    <title>Home Work 12</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header disactive">
+           <div class="header__container container">
+              <div class="header__logo">
+                 <img class="header__img" src="https://s3.amazonaws.com/csstarwars/starwars-logo.png" alt="Star Wars" />
+              </div>
+              <form action="" onsubmit="return false" class="input__form">
+                 <label for="number-film">Film</label>
+                 <input id="number-film" class="number-film" type="text">
+                 <button class="input__button" type="submit">Find </button>
+              </form>
+              <button class="wookie__translate" type="submit">Wookie </button>
+           </div>
+  
+        </header>
+  
+        <div class="container">
+           <div id="stage">
+              <img id ='stage-img' src="https://s3.amazonaws.com/csstarwars/starwars-logo.png" alt="Star Wars" />
+              <p id="far-far-away">
+                 A long time ago in a galaxy far,<br />far away. . . .
+              </p>
+           </div>
+           <div class="peoples__header disactive">
+  
+           </div>
+           <div class="peoples disactive">
+  
+           </div>
+           <div class="planets__header disactive ">
+              Planets
+           </div>
+           <div class="pagination disactive">
+              <div class=" planets ">
+              </div>
+              <button class="prev"> prev</button>
+              <span class="page">1</span>
+              <button class="next"> next</button>
+           </div>
+  
+        </div>
+     </div>
+     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+   <script src="./js/main.js"></script> 
+</body>
+</html>
